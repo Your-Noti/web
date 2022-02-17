@@ -30,11 +30,12 @@ jobs:
         run: npm install
       - name: Build
         run: npm run build
-      - name: Archive Production Artifact
-        uses: actions/upload-artifact@master
+      - name: Archive bundle
+        uses: actions/upload-artifact@v2
         with:
-          name: dist
-          path: dist
+          name: bundle
+          path: build
+          if-no-files-found: error
   deploy:
     name: Deploy
     needs: build
@@ -48,7 +49,7 @@ jobs:
           name: dist
           path: dist
       - name: Deploy to Firebase
-        uses: w9jds/firebase-action@master
+        uses: actions/upload-artifact@v2
         with:
           args: deploy --only hosting
         env:
