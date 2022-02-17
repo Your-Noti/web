@@ -5,27 +5,27 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 // Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
+// import { initializeApp } from "firebase/app";
+// import { getAnalytics } from "firebase/analytics";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
-    apiKey: "AIzaSyCIbVetoNZ3rEXlVjiPxI6MeFrwp1dzH6c",
-    authDomain: "notification-mob.firebaseapp.com",
-    databaseURL: "https://notification-mob-default-rtdb.europe-west1.firebasedatabase.app",
-    projectId: "notification-mob",
-    storageBucket: "notification-mob.appspot.com",
-    messagingSenderId: "136916103479",
-    appId: "1:136916103479:web:1e6cf618488c3aa3d2aab2",
-    measurementId: "G-YW5WE2WGX3"
-
-};
+// const firebaseConfig = {
+//     apiKey: "AIzaSyCIbVetoNZ3rEXlVjiPxI6MeFrwp1dzH6c",
+//     authDomain: "notification-mob.firebaseapp.com",
+//     databaseURL: "https://notification-mob-default-rtdb.europe-west1.firebasedatabase.app",
+//     projectId: "notification-mob",
+//     storageBucket: "notification-mob.appspot.com",
+//     messagingSenderId: "136916103479",
+//     appId: "1:136916103479:web:1e6cf618488c3aa3d2aab2",
+//     measurementId: "G-YW5WE2WGX3"
+//
+// };
 
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
+// const app = initializeApp(firebaseConfig);
 // const analytics = getAnalytics(app);
 
 ReactDOM.render(
