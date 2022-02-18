@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          {process.env.REACT_APP_FIREBASE_API_KEY}
+          ads
         </a>
       </header>
     </div>
