@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          It's work
+          {process.env.REACT_APP_FIREBASE_API_KEY}
         </a>
       </header>
     </div>
