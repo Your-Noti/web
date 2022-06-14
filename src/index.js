@@ -1,8 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
 
 // import { initializeApp } from "firebase/app";
 // import { getAnalytics } from "firebase/analytics";
@@ -22,14 +20,17 @@ import reportWebVitals from './reportWebVitals';
 // const app = initializeApp(firebaseConfig);
 // const analytics = getAnalytics(app);
 
+const text = `The Trust Technique Centre takes your privacy seriously. We are committed to data security and the fair and transparent processing of your personal data.  This Privacy Policy sets out how we will treat the personal data which you provide to us in compliance with applicable data protection law, in particular, the General Data Protection Regulation (EU) 2016/679 (GDPR).
+           Please read this Policy carefully as it contains important information on who we are, how and why we collect, store, use and share personal data, your rights in relation to your personal data and how to contact us.`
+
 ReactDOM.render(
     <React.StrictMode>
-        <App/>
+        <div>
+          <h2>Internet Privacy & Cookies Policy</h2>
+          <div>
+            {text}
+          </div>
+        </div>
     </React.StrictMode>,
     document.getElementById('root')
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
